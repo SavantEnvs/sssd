@@ -1,0 +1,3 @@
+<SUBJECT>.*
+LDAP:(rule={subject_dn})
+test.domain,other.domain

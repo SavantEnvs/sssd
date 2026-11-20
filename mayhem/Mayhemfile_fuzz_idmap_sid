@@ -1,0 +1,11 @@
+project: savantenvs/sssd
+target: fuzz_idmap_sid
+
+cmds:
+  - cmd: /mayhem/fuzz_idmap_sid
+    libfuzzer: true
+    timeout: 5
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_idmap_sid/testsuite

@@ -1,0 +1,2 @@
+&&<ISSUER>^CN=.*,O=IPA.DEVEL$<SAN:ntPrincipalName>.*
+LDAP:(userCertificate;binary={cert!bin})

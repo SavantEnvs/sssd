@@ -1,0 +1,11 @@
+project: savantenvs/sssd
+target: fuzz_nss_cmd
+
+cmds:
+  - cmd: /mayhem/fuzz_nss_cmd
+    libfuzzer: true
+    timeout: 5
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_nss_cmd/testsuite

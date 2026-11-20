@@ -1,0 +1,11 @@
+project: savantenvs/sssd
+target: fuzz_certmap_cert
+
+cmds:
+  - cmd: /mayhem/fuzz_certmap_cert
+    libfuzzer: true
+    timeout: 5
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_certmap_cert/testsuite

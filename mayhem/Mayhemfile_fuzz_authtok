@@ -1,0 +1,11 @@
+project: savantenvs/sssd
+target: fuzz_authtok
+
+cmds:
+  - cmd: /mayhem/fuzz_authtok
+    libfuzzer: true
+    timeout: 5
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_authtok/testsuite

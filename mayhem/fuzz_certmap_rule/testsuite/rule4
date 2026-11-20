@@ -1,0 +1,2 @@
+||<EKU>1.3.6.1.5.2.3.4<SAN:pkinitSAN>.*
+LDAPU1:(sid={sid})({serial_number!HEX_u})({subject_key_id!hex_c})

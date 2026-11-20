@@ -1,0 +1,2 @@
+<SAN:rfc822Name>.*@redhat.com
+LDAP:(altSecurityIdentities=X509:<I>{issuer_dn!ad}<S>{subject_dn!ad})

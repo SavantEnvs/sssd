@@ -1,0 +1,2 @@
+KRB5:<KU>digitalSignature,keyEncipherment<EKU>clientAuth
+LDAPU1:(x={issuer_dn!ad_x500}{subject_dn!nss})
